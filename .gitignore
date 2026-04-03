@@ -54,6 +54,14 @@ project.fragment.lock.json
 artifacts/
 **/Properties/launchSettings.json
 
+# Node and Orchard Core development artifacts
+**/node_modules/
+**/App_Data/
+**/wwwroot/media/
+**/wwwroot/Media/
+playwright-report/
+test-results/
+
 # StyleCop
 StyleCopReport.xml
 

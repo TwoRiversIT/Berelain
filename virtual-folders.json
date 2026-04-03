@@ -1,0 +1,36 @@
+{
+  "solutionFolders": {
+    "/.dev/": {
+      "path": ".",
+      "include": [
+        ".*",
+        "*.props",
+        "*.targets",
+        "*.yml",
+        "*.yaml",
+        "*.json",
+        "*.md",
+        "*.ps1",
+        "*.psm1",
+        "*.psd1"
+      ]
+    },
+    ".github/": {
+      "path": ".github/",
+      "recurse": true,
+      "include": [
+        "*.md",
+        "*.yml",
+        "*.yaml"
+      ]
+    },
+    "docs/": {
+      "path": "docs/",
+      "recurse": true,
+      "include": [
+        "*.md",
+        "*.txt"
+      ]
+    }
+  }
+}

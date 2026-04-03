@@ -1,14 +1,14 @@
-# Two Rivers Orchard Core Font Awesome
+# Two Rivers Berelain
 
-This repository contains the source for `TwoRivers.OrchardCore.FontAwesome`, a standalone Orchard Core module for Font Awesome icon management, curation, and rendering.
+This repository contains the source for `TwoRivers.Berelain`, a standalone Orchard Core module for Font Awesome icon management, curation, and rendering.
 
-For module usage and host application setup, see [src/TwoRivers.OrchardCore.FontAwesome/README.md](src/TwoRivers.OrchardCore.FontAwesome/README.md).
+For module usage and host application setup, see [src/TwoRivers.Berelain/README.md](src/TwoRivers.Berelain/README.md).
 
 ## Documentation
 
-- [src/TwoRivers.OrchardCore.FontAwesome/README.md](src/TwoRivers.OrchardCore.FontAwesome/README.md): module usage, installation, configuration, and runtime behavior.
-- [src/TwoRivers.OrchardCore.FontAwesome/docs/PLAN.md](src/TwoRivers.OrchardCore.FontAwesome/docs/PLAN.md): implementation and remediation plan.
-- [src/TwoRivers.OrchardCore.FontAwesome/docs/DEVELOPMENT_AND_TESTING_INFRASTRUCTURE.md](src/TwoRivers.OrchardCore.FontAwesome/docs/DEVELOPMENT_AND_TESTING_INFRASTRUCTURE.md): development host, automated testing, CI, and tooling strategy.
+- [src/TwoRivers.Berelain/README.md](src/TwoRivers.Berelain/README.md): module usage, installation, configuration, and runtime behavior.
+- [docs/PLAN.md](docs/PLAN.md): implementation and remediation plan.
+- [docs/DEVELOPMENT_AND_TESTING_INFRASTRUCTURE.md](docs/DEVELOPMENT_AND_TESTING_INFRASTRUCTURE.md): development host, automated testing, CI, and tooling strategy.
 
 ## Development
 
@@ -23,7 +23,7 @@ For module usage and host application setup, see [src/TwoRivers.OrchardCore.Font
 
 This repository does not commit licensed Font Awesome assets.
 
-Development and automated tests use the npm-based restore workflow defined in [src/TwoRivers.OrchardCore.FontAwesome/package.json](src/TwoRivers.OrchardCore.FontAwesome/package.json). Font Awesome authentication is supplied through environment variables.
+Development and automated tests use the npm-based restore workflow defined in [src/TwoRivers.Berelain/package.json](src/TwoRivers.Berelain/package.json). Font Awesome authentication is supplied through environment variables.
 
 The restored assets are for development and test workflows only. They are not part of the NuGet package.
 
@@ -32,12 +32,12 @@ The restored assets are for development and test workflows only. They are not pa
 Build the current solution from the repository root:
 
 ```powershell
-dotnet build .\TROCFA.sln
+dotnet build .\TwoRivers.Berelain.sln
 ```
 
 ### Testing
 
-The long-term testing infrastructure is defined in [src/TwoRivers.OrchardCore.FontAwesome/docs/DEVELOPMENT_AND_TESTING_INFRASTRUCTURE.md](src/TwoRivers.OrchardCore.FontAwesome/docs/DEVELOPMENT_AND_TESTING_INFRASTRUCTURE.md).
+The long-term testing infrastructure is defined in [docs/DEVELOPMENT_AND_TESTING_INFRASTRUCTURE.md](docs/DEVELOPMENT_AND_TESTING_INFRASTRUCTURE.md).
 
 Current repository direction:
 
@@ -49,7 +49,7 @@ Current repository direction:
 
 The module project excludes heavy Font Awesome directories from Orchard module-asset embedding so local development assets do not balloon build times.
 
-- Configuration lives in [src/TwoRivers.OrchardCore.FontAwesome/TwoRivers.OrchardCore.FontAwesome.csproj](src/TwoRivers.OrchardCore.FontAwesome/TwoRivers.OrchardCore.FontAwesome.csproj).
+- Configuration lives in [src/TwoRivers.Berelain/TwoRivers.Berelain.csproj](src/TwoRivers.Berelain/TwoRivers.Berelain.csproj).
 - These exclusions are a development-time safeguard only. They do not change the module's host asset contract.
 
 ## NuGet Packaging
@@ -63,7 +63,7 @@ NuGet packaging is the deployment boundary for this repository.
 Package the module from the repository root with:
 
 ```powershell
-dotnet pack .\src\TwoRivers.OrchardCore.FontAwesome\TwoRivers.OrchardCore.FontAwesome.csproj -c Release
+dotnet pack .\src\TwoRivers.Berelain\TwoRivers.Berelain.csproj -c Release
 ```
 
 ## Repository Policies
