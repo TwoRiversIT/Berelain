@@ -1,0 +1,94 @@
+/*
+ * Font Awesome Icon Picker — field editor styles
+ * TwoRivers.Berelain
+ *
+ * Uses Bootstrap CSS custom properties throughout so the picker inherits the
+ * host application's theme, including dark-mode overrides.
+ */
+
+/* ── Results grid ──────────────────────────────────────────────────────────── */
+
+.fa-admin-icon-glyph {
+    display: inline-block;
+    font-family: var(--fa-picker-font-family, "Font Awesome 7 Pro");
+    font-style: normal;
+    font-variant: normal;
+    font-weight: var(--fa-picker-font-weight, 400);
+    line-height: 1;
+    text-rendering: auto;
+}
+
+.fa-admin-icon-glyph::before {
+    content: var(--fa-picker-content, "");
+}
+
+.fa-picker-results {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));
+    gap: 0.25rem;
+}
+
+/* ── Individual icon item ──────────────────────────────────────────────────── */
+
+.fa-picker-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0.5rem 0.25rem;
+    font-size: 0.75rem;
+    text-align: center;
+    overflow: hidden;
+    cursor: pointer;
+
+    border: 1px solid var(--bs-border-color, #dee2e6);
+    border-radius: var(--bs-border-radius, 0.375rem);
+    background: var(--bs-body-bg, #fff);
+    color: var(--bs-body-color, #212529);
+
+    /* Reset browser button defaults */
+    -webkit-appearance: none;
+    appearance: none;
+    line-height: inherit;
+}
+
+.fa-picker-item:hover {
+    background: var(--bs-secondary-bg, #e9ecef);
+    border-color: var(--bs-secondary-color, #6c757d);
+}
+
+.fa-picker-item:focus-visible {
+    outline: 2px solid var(--bs-primary, #0d6efd);
+    outline-offset: 1px;
+}
+
+.fa-picker-item--selected {
+    background: var(--bs-primary-bg-subtle, #cfe2ff);
+    border-color: var(--bs-primary, #0d6efd);
+    color: var(--bs-primary-text-emphasis, #052c65);
+}
+
+.fa-picker-item .fa-picker-item-icon {
+    font-size: 1.25rem;
+    line-height: 1;
+    pointer-events: none;
+}
+
+.fa-picker-item-label {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 100%;
+    pointer-events: none;
+}
+
+.fa-picker-item-key {
+    font-size: 0.6rem;
+    color: var(--bs-secondary-color, #6c757d);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 100%;
+    display: block;
+    pointer-events: none;
+}
