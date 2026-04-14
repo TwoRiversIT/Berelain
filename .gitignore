@@ -339,6 +339,7 @@ ASALocalRun/
 .mfractor/
 
 # Solution specific directories and files
+src/TwoRivers.Berelain/wwwroot/lib/fontawesome/**
 build.txt
 copilot.md
 copilot.txt
