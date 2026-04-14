@@ -1,0 +1,16 @@
+@model TwoRivers.Berelain.Models.BerelainIconFieldSettings
+
+<div class="mb-3">
+    <div class="form-check">
+        <input asp-for="AllowSizeSelection" class="form-check-input" type="checkbox" />
+        <label asp-for="AllowSizeSelection" class="form-check-label">Allow size selection</label>
+        <span class="hint">Shows a size dropdown (fa-2xs through fa-2xl) in the field editor.</span>
+    </div>
+</div>
+<div class="mb-3">
+    <div class="form-check">
+        <input asp-for="AllowColorSelection" class="form-check-input" type="checkbox" />
+        <label asp-for="AllowColorSelection" class="form-check-label">Allow color selection</label>
+        <span class="hint">Shows a Bootstrap semantic text-color dropdown in the field editor.</span>
+    </div>
+</div>

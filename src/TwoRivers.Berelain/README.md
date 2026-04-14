@@ -88,4 +88,4 @@ The module provides an admin report of icons in use so administrators can valida
 
 ## License
 
-BSD-3-Clause - see [LICENSE.txt](LICENSE.txt).
+BSD-3-Clause - see [LICENSE.txt](LICENSE.md)
